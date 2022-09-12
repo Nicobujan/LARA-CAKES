@@ -6,3 +6,35 @@ h3{
     background-color: $texthfcolor;
     font-family: "Arvo", serif;
 }
+@mixin cards ($fondo){
+    background-color: $fondo;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+} 
+main{
+.bombon{
+    @include cards(green)
+}
+.galleta{
+    @include cards(skyblue)
+}
+.magda{
+    @include cards(yellow)
+}
+.paleta{
+    @include cards(green)
+}
+.tortas{
+    @include cards(skyblue)
+}
+.estruc{
+    @include cards(yellow)
+}
+
+
+
+
+
+}

@@ -15,7 +15,7 @@ footer{
 
     .fa-twitter {
         color: $texthfcolor;
-        
+
     }
     
     .fa-facebook {
@@ -35,6 +35,20 @@ footer{
     
 }
 
+footer{
+    .fa-twitter:hover{
+        color: $twittcol;
+    }
+    .fa-facebook:hover{
+        color: $facecol;
+    }
+    .fa-instagram:hover{
+        color: $instacol;
+    }
+    .fa-whatsapp:hover{
+        color: $whatcol;
+    }
+}
 
 
 

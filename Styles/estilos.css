@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Arvo:ital@1&family=Changa:wght@300&family=Mouse+Memoirs&family=Pacifico&family=Shrikhand&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Arvo:ital@1&family=Changa:wght@300&family=Mouse+Memoirs&family=Oswald:wght@300&family=Pacifico&family=Shrikhand&family=Silkscreen&display=swap");
 header {
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -19,13 +19,17 @@ header .pestañas a {
           animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+header #logo:hover {
+  color: white;
+}
+
 .hero {
   background-image: url(../fotos/fondobody.svg);
   background-color: white;
   height: 90vh;
 }
 .hero #bienvenidos {
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   color: #D4908E;
   font-family: "Arvo", serif;
   -webkit-animation: color-change-2x 10s linear infinite alternate both;
@@ -33,11 +37,16 @@ header .pestañas a {
 }
 
 .miranos {
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
 }
 .miranos #miralo {
   color: #D4908E;
   font-family: "Arvo", serif;
+}
+
+#buton {
+  background-color: #D4908E;
+  font-weight: bold;
 }
 
 #body-index {
@@ -45,7 +54,9 @@ header .pestañas a {
 }
 
 .card-body {
-  background-color: #c1c0bf;
+  background-color: #d8d7d7;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
 #muestra1, #muestra6, #muestra5, #muestra4, #muestra3, #muestra2 {
@@ -66,21 +77,21 @@ header .pestañas a {
 
 .nombre label {
   font-family: "Arvo", serif;
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   border-radius: 25px;
   padding: 5px;
 }
 
 .mail label {
   font-family: "Arvo", serif;
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   border-radius: 25px;
   padding: 5px;
 }
 
 legend {
   font-family: "Arvo", serif;
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   border-radius: 25px;
   padding: 5px;
 }
@@ -92,7 +103,7 @@ legend {
   font-family: "Arvo", serif;
   color: #ef8383;
   display: inline-block;
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   border-radius: 15px;
   padding: 2px;
 }
@@ -155,12 +166,49 @@ h3 {
   font-family: "Arvo", serif;
 }
 
+main .bombon {
+  background-color: green;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .galleta {
+  background-color: skyblue;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .magda {
+  background-color: yellow;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .paleta {
+  background-color: green;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .tortas {
+  background-color: skyblue;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .estruc {
+  background-color: yellow;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 #footer-como-comprar {
   margin-top: 123px;
 }
 
 footer {
-  background-color: #9E9D99;
+  background-color: #F6E3DF;
   padding: 20px;
   margin-top: 113px;
 }
@@ -180,4 +228,242 @@ footer .fa-instagram {
 }
 footer .fa-whatsapp {
   color: #D4908E;
+}
+
+footer .fa-twitter:hover {
+  color: #1DA1F2;
+}
+footer .fa-facebook:hover {
+  color: #4292FF;
+}
+footer .fa-instagram:hover {
+  color: #FF458B;
+}
+footer .fa-whatsapp:hover {
+  color: #00A884;
+}
+
+#seguinos {
+  color: #d5918e;
+  -webkit-animation: efecto_instagram 0.7s ease-in-out infinite both;
+          animation: efecto_instagram 0.7s ease-in-out infinite both;
+}
+
+@-webkit-keyframes efecto_instagram {
+  0% {
+    transform: scale(1);
+    color: #D5918E;
+  }
+  50% {
+    transform: scale(1.3);
+    color: #D5918E;
+  }
+  100% {
+    transform: scale(1);
+    color: #D5918E;
+  }
+}
+
+@keyframes efecto_instagram {
+  0% {
+    transform: scale(1);
+    color: #D5918E;
+  }
+  50% {
+    transform: scale(1.3);
+    color: #D5918E;
+  }
+  100% {
+    transform: scale(1);
+    color: #D5918E;
+  }
+}
+#bienvenidos {
+  -webkit-animation: color-change-2x 5s linear infinite alternate both;
+          animation: color-change-2x 5s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+#texto-contacto {
+  -webkit-animation: bounce-in-top 1.1s both;
+          animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+.titulos {
+  -webkit-animation: flip-in-hor-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+.foto {
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+#titulo-como-comprar {
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -22,7 +22,10 @@
      }
  
  }
- 
+ #buton{
+   background-color: $texthfcolor;
+   font-weight: bold;
+ }
  
  #body-index {
      background-image: radial-gradient(circle, #9E9D99, #D4908E,#EBB4B1 , pink);
@@ -30,7 +33,10 @@
  }
  
  .card-body{
-    background-color: #c1c0bf;
+    background-color: #d8d7d7;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+   
  }
  #muestra1 {
      height: 250px;

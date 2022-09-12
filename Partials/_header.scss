@@ -8,10 +8,14 @@ header{
         font-family: 'Shrikhand', cursive;
         color: $texthfcolor;
         animation: slide-in-left .2s cubic-bezier(.25, .46, .45, .94) .3s both
+        
     }
 
     .pestañas a {
         color: $texthfcolor;
         animation: slide-in-left .3s cubic-bezier(.25, .46, .45, .94) both
     }
+}
+header #logo:hover{
+    color: white;
 }
