@@ -1,0 +1,28 @@
+#body-quienes {
+    background-image:url(../fotos/fondosignos.webp) ;
+    
+    
+
+
+section {
+    .titulos {
+        font-family: "Arvo", serif;
+        color: #ef8383;
+        display:inline-block;
+        background-color: $hfcolor;
+        border-radius: 15px;
+        padding: 2px;
+
+        
+    }
+
+    #parrafo-quienes{
+        border: 4px solid black;
+        border-radius: 20px;
+        
+        padding: 10px;
+        background-color: #e2baba;
+        
+    }
+}
+}

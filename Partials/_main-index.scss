@@ -1,0 +1,56 @@
+.hero {
+    background-image: url(../fotos/fondobody.svg);
+    background-color: white;
+     height: 90vh;
+ 
+     #bienvenidos {
+         background-color: $hfcolor;
+         color: $texthfcolor;
+         font-family: 'Arvo', serif;
+         animation: color-change-2x 10s linear infinite alternate both
+     }
+ 
+ }
+ 
+ .miranos {
+     background-color: $hfcolor;
+ 
+     #miralo {
+         color: $texthfcolor;
+         font-family: 'Arvo', serif;
+     
+     }
+ 
+ }
+ 
+ 
+ #body-index {
+     background-image: radial-gradient(circle, #9E9D99, #D4908E,#EBB4B1 , pink);
+     
+ }
+ 
+ .card-body{
+    background-color: #c1c0bf;
+ }
+ #muestra1 {
+     height: 250px;
+     
+ }
+ 
+ #muestra2 {
+    @extend #muestra1;
+ }
+ 
+ #muestra3 {
+     @extend #muestra1;
+ }
+ #muestra4 {
+     @extend #muestra1;
+ }
+ #muestra5 {
+     @extend #muestra1;
+ }
+ #muestra6 {
+     @extend #muestra1;
+ }
+ 

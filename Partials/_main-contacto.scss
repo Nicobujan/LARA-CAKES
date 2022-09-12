@@ -1,0 +1,45 @@
+#body-contacto {
+    background-image: url(../fotos/fondo\ body.webp);
+}
+
+#main-contacto {
+
+    h1 {
+        font-family: "Shrikhand", cursive;
+        color: black;
+    }
+
+    #texto-contacto {
+        p {
+            background-color: $texthfcolor;
+        }
+    }
+
+}
+
+.nombre {
+    label {
+        font-family: "Arvo", serif;
+        background-color: $hfcolor;
+        border-radius: 25px;
+        padding: 5px;
+
+    }
+}
+
+.mail{
+    label{
+        font-family: "Arvo", serif;
+        background-color: $hfcolor;
+        border-radius: 25px;
+        padding: 5px;
+    }
+}
+
+legend{
+    font-family: "Arvo", serif;
+    background-color: $hfcolor;
+    border-radius: 25px;
+    padding: 5px;
+
+}

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es-ES"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es-ES"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es-ES"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es-ES"> <!--<![endif]-->
+<html>
+    <head>
+
+                    <script>
+        window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500,
+    });
+    
+
+    var allCookies = {"essentials":["pasteleria_cookie_accept"],"statistics":["_ga","_gid","_gcl_au","_dc_gtm_UA-3976508-1"]};
+
+    // Getting an array from blocked cookies
+    blockCookies(allCookies);
+
+    /* COOKIE PROXY */
+    var cookieDesc = Object.getOwnPropertyDescriptor(Document.prototype, 'cookie') ||
+    Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie');
+    if (cookieDesc && cookieDesc.configurable) {
+        Object.defineProperty(document, 'cookie', {
+            get: function () {
+                return cookieDesc.get.call(document);
+            },
+            set: function (val) {
+                var split = val.split('=');
+                var cname = split[0].trim();
+    
+                if (cookies_not_allowed !== undefined && cookies_not_allowed.includes(cname)) {
+                    console.log('cookie blocked :' + cname);
+                } else {
+                    cookieDesc.set.call(document, val);
+                }
+            }
+        });
+    }
+    /* END - COOKIE PROXY */
+
+    function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+    }
+
+    function gtagConsentGranted() {
+        gtag('consent', 'update', {
+            ad_storage: 'granted',
+            analytics_storage: 'granted'
+        });
+    }
+
+    function blockCookies(cookies) {
+
+        cookies_not_allowed = [];
+        
+        let cookieConfig = JSON.parse(getCookie('pasteleria_cookie_accept'));
+        if(cookieConfig !== null && cookieConfig['accept'] === true) {
+            
+            if (cookieConfig['settings']['pasteleria_cookie_statistics'] === false) {
+                if (cookies.statistics !== undefined) {
+                    cookies_not_allowed = cookies_not_allowed.concat(cookies.statistics);
+
+                    // Deleting user cookies if exists 
+                    cookies.statistics.forEach(element => {
+                        document.cookie = element + '=; expires= Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length);
+                    });
+                }
+            } else {
+                gtagConsentGranted();
+            }
+        } else {
+
+            if (cookies.statistics !== undefined) {
+                cookies_not_allowed = cookies_not_allowed.concat(cookies.statistics);
+
+                cookies.statistics.forEach(element => {
+                    document.cookie = element + '=; expires= Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length);
+                });
+            }
+        }
+    }
+</script>        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3976508-5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-3976508-1');
+        </script>
+        
+        
+        <meta charset="utf-8">
+        <link rel="canonical" href="https://www.pasteleria.com/articulo/201909/3413-10-establecimientos-chocolate-estrella"/>
+        <meta property="og:locale" content="es_ES"/>
+        <meta property="og:site_name" content="Dulcypas"/>
+                                    <title>10 establecimientos con el chocolate como estrella de su oferta :: pasteleria.com</title>
+                                        <meta name="description" content="En la cuarta edición de Dulcypas Book nos detenemos en negocios que no sólo rinden culto al buen chocolate, sino que se preocupan por aumentar la cultura en torno a este alimento con catas y talleres."/>
+                                        <meta name="author" content="Redacción"/>
+                                                                <meta name="og:title" content="10 establecimientos con el chocolate como estrella de su oferta"/>
+                                        <meta name="og:type" content="article"/>
+                                        <meta name="og:description" content="En la cuarta edición de Dulcypas Book nos detenemos en negocios que no sólo rinden culto al buen chocolate, sino que se preocupan por aumentar la cultura en torno a este alimento con catas y talleres."/>
+                                        <meta name="article:published_time" content="2019-09-12T18:11:00Z"/>
+                                        <meta name="article:modified_time" content="2022-01-17T13:18:333600Z"/>
+                                        <meta name="og:image" content="https://portales.vilbo.com/files/uploads/images/articulos/book dulcypas 18/xocolateriaferrer_interior_port.jpg"/>
+                <meta itemprop="image" content="https://portales.vilbo.com/files/uploads/images/articulos/book dulcypas 18/xocolateriaferrer_interior_port.jpg"/>
+                    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/images/favicon/favicon.ico" type="image/x-icon" rel="icon"/>
+        <link href="/images/favicon//favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+                        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+                        <link rel="stylesheet" type="text/css" href="/css/sites/pasteleria.css"/>
+            <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+        
+    <link rel="stylesheet" type="text/css" href="/css/pages/blog-detail.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-thumbs.css"/>
+    </head>
+    <body>
+
+                    <div role="navigation" id="navbar" class="navigation pos-sticky" >
+    <div class="container">
+        <nav class="row justify-content-between">
+            <a class="navbar-brand col-6 col-lg-3" href="/">
+                <img src="/images/dpas_logo.webp"/>
+            </a>
+            <div class="col-6 col-lg-9 d-flex flex-column justify-content-around">
+                <div class="row no-gutters align-items-center justify-content-end">
+                        <div class="search col-auto">
+                            <a href="/search">
+                                <img src="/images/test/lupa.png" alt="lupa">
+                            </a>
+                        </div>
+                        <div class="menu-hamburger col-auto" id="menuToggle">
+                            <input type="checkbox" data-com.bitwarden.browser.user-edited="yes">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                <div class="d-none d-lg-flex" >
+                    <nav class="navbar navbar-expand-lg navbar-light px-0" id="header-menu">
+                        <div class="d-flex collapse navbar-collapse" >
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="/actualidad">Noticias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  active " href="/articulos-y-reportajes">Artículos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/recetas-profesionales">Recetario</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link " href="/entrevistas">Entrevistas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/chefs">Chefs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/libros">Libros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/dulcypas">DPAS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="navbar align-self-end navbar-expand-lg navbar-light px-0" id="suscribe-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link px-0 " href="/dulcypas/pricing">Suscríbete</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-2 order-md-1">
+                    <ul id="secondary-menu" class="mt-3 mt-sm-5 mt-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/sections/about">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.booksforchefs.com/" target="_blank">Tienda online Books for Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sections/contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul id="secondary-menu" class="mt-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ferias-profesionales">Calendario de ferias</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/novedades">Novedades</a>
+                       </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cursos">Escuelas de formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mejorpastadete">Mejor Pasta de Té de España</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-7 order-1 order-md-2">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <ul id="main-menu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/actualidad">Noticias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/articulos-y-reportajes">Artículos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/recetas-profesionales">Recetario</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="/entrevistas">Entrevistas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/chefs">Chefs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/libros">Libros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/dulcypas">DPAS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul id="terciary-menu" class="mt-3 mt-sm-5 mt-md-0">
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link px-0" href="/dulcypas/pricing">Suscríbete</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/dulcypas">Hazte DPS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/newsletter">Newsletter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 header-links">
+            <div class="row">
+                <div class="col-12 col-md-5 header-social">
+                    <div class="header-links-label">
+                        Síguenos:
+                    </div>
+                    <div id="header-social-networks" class="row">
+                        <div class="col-auto">
+                            <a href="http://instagram.com/revistadulcypas" target="_blank">
+                                <i class="bi bi-instagram d-flex"></i>
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="http://www.facebook.com/dulcypas" target="_blank">
+                                <i class="bi bi-facebook d-flex"></i>
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="http://www.youtube.com/grupovilbo" target="_blank">
+                                <i class="bi bi-youtube d-flex"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="header-links-label">
+                        Otras cabeceras:
+                    </div>
+                    <div id="header-webs" class="row">
+                        <div class="col-auto">
+                            <a target="_blank" href="https://saberysabor.com">
+                                <img src="/images/cabeceras/saberysabor.webp">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a target="_blank" href="https://heladeria.com">
+                                <img src="/images/cabeceras/heladeria.webp">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a target="_blank" href="https://sogoodmagazine.com">
+                                <img src="/images/cabeceras/sogood.webp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            <div id="main">
+                        <article class="container post">
+	<div>
+		<h1 class="title">10 establecimientos con el chocolate como estrella de su oferta</h1>
+		
+		<div class="row justify-content-between align-items-center extra-info">
+			<div class="col-auto">
+				<div class="row no-gutters align-items-center author-info">
+											<img class="pr-1" src="https://portales.vilbo.com/files/ups/users/11/logo-dpas_cropped_100x100.png">
+										<p class="author pl-1">Por <span >Redacción </span> 12 de septiembre de 2019
+											</p>
+				</div>
+			</div>
+			<div class="col col-sm-auto">
+                				    <a class="category" href="/c/rankings">Rankings</a>
+                			</div>
+		</div>
+
+		
+		<div class="editor">
+			<p>
+	El chocolate es la estrella absoluta en estos diez establecimientos incluidos en la cuarta edici&oacute;n de <a href="https://www.pasteleria.com/posts/tag/dulcypas-book">Dulcypas Book</a>&nbsp;(2018), dedicada &iacute;ntegramente a establecimientos.<br />
+	Boutiques en las que este alimento vers&aacute;til y gourmet se presenta en una gran variedad de productos, desde bombones, monas, turrones hasta especialidades de temporada. Locales que rinden culto al buen chocolate y que buscan aumentar la cultura chocolatera de los clientes, no s&oacute;lo con lanzamientos originales, sino tambi&eacute;n con catas y talleres. Para nuestra editorial est&aacute; claro, son ense&ntilde;as de referencia gracias al buen trabajo que realizan, pero tambi&eacute;n establecimientos a reivindicar porque hacen de labores tan tradicionales como la chocolater&iacute;a o la bomboner&iacute;a, una propuesta de negocio enraizada y con futuro.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	La maison catalana del chocolate</h4>
+<h5>
+	Ferrer Xocolata, Olot / <a href="https://www.pastisseriaferrer.cat/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">www.pastisseriaferrer.cat</span></a></h5>
+<p>
+	<img alt="Interior de la pastisseria Ferrer" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/ferrerxoco-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	De la <a href="https://www.pastisseriaferrer.cat/" target="_blank">Pastisseria Ferrer</a>, con 111 a&ntilde;os a sus espaldas, naci&oacute; hace poco m&aacute;s de dos a&ntilde;os un proyecto totalmente nuevo e independiente, en un edificio separado a pocos metros del original, llamado Ferrer Xocolata. All&iacute; Jordi Ferrer ha desplegado la chocolater&iacute;a de sus sue&ntilde;os, un espacio que respira modernidad por los cuatro costados y que est&aacute; inspirado en algunas de las mejores chocolater&iacute;as de la capital francesa. Este edificio est&aacute; estructurado en cuatro plantas que se reparten en un espacio de degustaci&oacute;n &ndash;planta subterr&aacute;nea-, la tienda propiamente &ndash;planta baja- con una gran vitrina central compartimentada en dos partes, una dedicada a la oferta de bombones y otra a pasteler&iacute;a de autor con el chocolate como hilo conductor; la segunda y tercera planta son los obradores de producci&oacute;n de chocolate, aunque tambi&eacute;n cuentan con zona acristalada y de exhibici&oacute;n de trabajos pensada para realizar toda clase de visitas, catas y talleres. Navidad y Pascua son con diferencia dos de los grandes momentos de Ferrer Xocolata, aunque Jordi nos confiesa que una de las actividades que m&aacute;s le apasiona es la de elaborar bombones, ya sean los cl&aacute;sicos y ba&ntilde;ados de toda la vida, o los encamisados en toda clase de formatos y sabores m&aacute;s personales. La elegancia del espacio y la calidad y variedad del producto, convierten Ferrer Xocolata en un lugar de visita obligada para cualquier amante del chocolate que se precie.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Moulin chocolat, coraz&oacute;n de Guanaja</h4>
+<h5>
+	Moulin Chocolat, Madrid / <a href="https://moulinchocolat.com/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">moulinchocolat.com</span></a></h5>
+<p>
+	<img alt="Moulin chocolat" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/moulinxoco-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Desde 2006 <a href="https://www.pasteleria.com/posts/tag/ricardo-velez">Ricardo V&eacute;lez</a> ha hecho de este templo del chocolate un lugar de visita obligada en Madrid, con varias colecciones de bombones y sobre todo un amplio surtido de boller&iacute;a y pasteler&iacute;a que tiene en ingredientes como la cobertura de origen Guanaja 70% -la favorita de Ricardo- un verdadero leit motiv. El Panettone de chocolate con naranja, los helados, el surtido de boller&iacute;a de mantequilla, los &eacute;clairs, los macarons o los postres individuales completan una vitrina que con los a&ntilde;os se ha convertido en uno de los puntos clave de la gastronom&iacute;a dulce en la capital.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Variedad, juventud y apuesta monogr&aacute;fica</h4>
+<h5>
+	Papua Chocolates, Valencia /&nbsp;<span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;"><a href="https://www.papuachocolates.com/" target="_blank">www.papuachocolates.com</a></span></h5>
+<p>
+	<img alt="El obrador de Papua Chocolates" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/papua-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Alicia Ribera y Nacho G&oacute;mez ten&iacute;an un sue&ntilde;o desde hac&iacute;a a&ntilde;os, abrir un establecimiento <a href="https://www.papuachocolates.com/" target="_blank">especializado solo en chocolate</a>. Muchos de sus compa&ntilde;eros y colegas del sector les advert&iacute;an de lo temerario de la idea. Pero su valent&iacute;a est&aacute; obteniendo una excelente recompensa. Despu&eacute;s de m&aacute;s de dos a&ntilde;os de andadura, han abierto su segunda tienda y se encuentran en un momento de consolidaci&oacute;n. Destaca tambi&eacute;n la creaci&oacute;n de un obrador independiente, con instalaci&oacute;n isot&eacute;rmica y con un dise&ntilde;o pensado para ofrecer catas y talleres en directo. En su oferta encontramos 24 referencias de bombones diferentes que adem&aacute;s van variando para seguir sorprendiendo a los clientes habituales, y todo tipo de chocolates para regalos y eventos, con especialidades de temporada como las peinetas de falleras o los masclets con petazetas. Brillan con luz propia las colecciones de zapatos de chocolate, tanto de tac&oacute;n como de f&uacute;tbol, que han causado furor entre sus clientes. &ldquo;El chocolate es un mundo tan amplio que no te lo acabas&rdquo; nos comenta Alberto G&oacute;mez, hijo de Alicia y Nacho. Y es con esa variedad sin fin con la que est&aacute;n potenciando la cultura chocolatera de los valencianos.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	El chocolate m&aacute;s vers&aacute;til</h4>
+<h5>
+	Oriol Balaguer - La Duquesita, Barcelona y Madrid /&nbsp;<a href="http://www.oriolbalaguer.com/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">www.oriolbalaguer.com</span></a></h5>
+<p>
+	<img alt="Bombones de Oriol Balaguer" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/oriolb-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Es uno de los profesionales m&aacute;s laureados de nuestro pa&iacute;s. Desde aquel lejano MMAPE de 1993 cuenta en su haber con t&iacute;tulos internacionales, como el m&aacute;s reciente Prix au Chef P&acirc;tissier de la Academia Internacional de Gastronom&iacute;a, pasando por los nada desde&ntilde;ables Mejor Croissant de Espa&ntilde;a 2014 y Mejor Panettone 2017. Con todo, es importante destacar uno de los ejes de su actividad, el chocolate y la bomboner&iacute;a. Con colecciones que se han hecho populares gracias al uso del caracter&iacute;stico molde de haba de cacao y en el que encontramos estuches como el que da t&iacute;tulo a su m&aacute;s reciente libro, OBsession, <a href="https://www.pasteleria.com/chefs/7-oriol-balaguer">Oriol Balaguer</a> ha convertido el chocolate en la estrella absoluta de su repertorio. La versatilidad de este chef nos permite adem&aacute;s disfrutar del chocolate en otros muchos estados adem&aacute;s de los bombones: en estado l&iacute;quido y como helado en uno de sus &uacute;ltimos locales, la Xocolateria de Barcelona; como alguna de sus espectaculares monas en Pascua; los turrones trufados en invierno; sus exquisitas y laureadas masas horneadas; o incluso su universal postre de Las 8 texturas del chocolate. Cuatro establecimientos en Barcelona y dos en Madrid nos ponen especialmente f&aacute;cil disfrutar de su talento.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Intensidad y variedad gourmet</h4>
+<h5>
+	Sant Croi by Albert Roca, Barcelona /&nbsp;<a href="https://santcroi.com/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">www.santcroi.com</span></a></h5>
+<p>
+	<img alt="Muestra de productos del Sant Croi" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/santcroi-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Juntar las palabras Barcelona y chocolate pasa casi obligatoriamente por a&ntilde;adir Sant Croi de <a href="https://www.pasteleria.com/chefs/20-albert-roca">Albert Roca</a> &ndash;antigua Pastisseria Badia Roca- donde Albert elabora desde hace a&ntilde;os algunos de los bombones y grageas m&aacute;s gloriosos de la ciudad. Por variedad no ser&aacute;, con hasta 10 trufas diferentes -fruta de la pasi&oacute;n, frambuesa, chocolate Guanaja, pralin&eacute; a l&rsquo;anci&egrave;nne, cinco especias&hellip;- y 5 trufas de licor entre las que no podemos dejar de mencionar la de whisky de malta ahumado. Pero el surtido chocolatero de Albert Roca y su equipo va mucho m&aacute;s all&aacute;, a destacar tambi&eacute;n las grageas gastron&oacute;micas con propuestas tan sugerentes como la de guisantes con wasabi. Y como buen especialista del chocolate, otras &eacute;pocas del a&ntilde;o como la de Navidad y Pascua son la excusa perfecta para desplegar un muestrario espectacular de turrones &ndash;hasta 14 referencias distintas-, monas y figuras de chocolate. Cerramos el recorrido con otro de los productos estrella de la casa, el croissant, premiado por dos veces en 2009 y 2019 como el mejor de Espa&ntilde;a. En su versi&oacute;n chocolatera, este producto se elabora con el mismo chocolate que se emplea en los bombones.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Repertorio cl&aacute;sico, churros y p&uacute;blico familiar</h4>
+<h5>
+	Pasteleria Bornachea, Miranda de Ebro /&nbsp;<a href="https://www.facebook.com/Pasteler%C3%ADa-Bornachea-439255892790105/?__tn__=kC-R&amp;eid=ARAsQO9-r7bM3Zo1Bz5N71NZh47nSUuUmyQOa_3VgGdC5nDO8DNtoD0mhYiD6rPIVFHOdsZKjFvCYJZf&amp;hc_ref=ARQm5PCaKQQH867q9GexFZ2EUDe0eDYt9fO1YV7cmvt732w3cWlIfgC-QYy_jMEyogg&amp;fref=nf&amp;__xts__[0]=68.ARBmtT1Z9cCweVaYg74MXcp-tVFS4H2ZZ_kc_8V3OD_gU5D-E_NUIKtMlDI6rp1GsZtSPJuzmTFOGRz2nSaTneW4luTj7fBHcRLO_YzZKMo6nnmYGx8H-ngGv5Pc4gwtb4ftoUp8E8X9CPo1X7pmpBizSNCXLdYmuRCD0WCkdxEGug8GVmvI7uz_BH-qCYZ7SIn9almbSPoGSHpYC-AYiTQWhBF2CuKShBcAmZJDfqCtStdXRZgYLbUBW5IO90lVvNaPYQuTuAHTubUiuHJMNr4Ev6tRjbOy_DRE3u4MEBxN25DCyXSPm1J4Kxml2f9F-YpfOp7vOZfeTH6cs6iny5fNJw" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">P&aacute;gina de Facebook</span></a></h5>
+<p>
+	<img alt="Escaparate de la pastelería Bornachea" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/bornaechea-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	La pasteler&iacute;a <a href="https://www.facebook.com/pages/category/Dessert-Shop/Pasteler%C3%ADa-Bornachea-439255892790105/" target="_blank">Bornachea</a> es uno de aquellos establecimientos m&iacute;ticos y centenarios por los que merece la pena pasarse no solo para apreciar ese aroma de sabidur&iacute;a y tradici&oacute;n destilada con las d&eacute;cadas, sino por la oferta viva y diversa que Alberto Bornachea, tercera generaci&oacute;n al frente, sabe mantener y desplegar. Aunque son las especialidades francesas las que le dieron un aire de modernidad al local, Bornachea cada vez es m&aacute;s partidario de la apuesta por productos populares de la propia tierra. Uno de estos, marca de la casa, es el surtido de turrones, que como en otras zonas del Norte del pa&iacute;s, es habitual presentarlo en las cl&aacute;sicas cajas y comercializado al corte. El &uacute;ltimo peque&ntilde;o gran revulsivo que han incorporado es el de los churros, que servidos junto a una taza de chocolate negro, se han convertido en un placer especialmente irresistible para el p&uacute;blico m&aacute;s adulto habitual en la zona. Los m&aacute;s peque&ntilde;os tienen una zona habilitada en el local para ellos, con lo que Bornachea tiene un reclamo doble para el p&uacute;blico familiar. La oferta chocolatera est&aacute; conformada adem&aacute;s por 19 clases de bombones diferentes, entre los que se dan un amplio n&uacute;mero de trufas, que si bien han pasado por referencias atrevidas con toques salados, cada vez m&aacute;s se ajustan a los sabores cl&aacute;sicos que gozan de mayor popularidad. Y si pas&aacute;is por la &eacute;poca de Pascua, tampoco os pod&eacute;is perder las fant&aacute;sticas monas y figuras de chocolate con volumen que Alberto confecciona desde hace d&eacute;cadas.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Las &uacute;ltimas tendencias en cada &eacute;poca del a&ntilde;o</h4>
+<h5>
+	Pastisseria U&ntilde;&oacute;, Matar&oacute; /&nbsp;<a href="http://www.xn--pastisseriauo-tkb.com/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">www.pastisseriau&ntilde;o.com</span></a></h5>
+<p>
+	<img alt="Entrada de la pastelería Uñó" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/pastuno-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Pasteler&iacute;a hist&oacute;rica de Matar&oacute; con m&aacute;s de 50 a&ntilde;os a sus espaldas y dos generaciones de Claudi U&ntilde;&oacute;, senior y junior, y familia dirigiendo con br&iacute;o el <a href="http://www.xn--pastisseriauo-tkb.com/es" target="_blank">local</a>. Son los responsables de poner el acento chocolatero al local, un chocolate que se ha convertido en el verdadero protagonista de su oferta. En Navidad los turrones trufados, los bombones m&aacute;s rom&aacute;nticos en San Valent&iacute;n y en Pascua un espectacular repertorio de monas con montaje de grandes dimensiones en el escaparate incluido, acompa&ntilde;an al surtido habitual de rocas, grageas y otras variedades. Las novedades son habituales cada mes, para mantener siempre un grado de sorpresa entre los clientes de toda la vida. Aunque hay cl&aacute;sicos que no pueden fallar nunca, como es el de trufa amarga, adem&aacute;s de otras ganaches como las de canela o coco. Claudi Junior reconoce un aumento de la cultura chocolatera entre los vecinos de la capital del Maresme. Desde el establecimiento tambi&eacute;n se han preocupado de cultivarla a trav&eacute;s de toda clase de talleres y catas informativas. El escaparate de U&ntilde;&oacute; en cada &eacute;poca del a&ntilde;o es un fiel reflejo de las &uacute;ltimas tendencias que se est&aacute;n viviendo en la chocolater&iacute;a artesana.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Chocolates de origen con mucho coraz&oacute;n</h4>
+<h5>
+	Utopick, Valencia /&nbsp;<a href="https://utopick.es/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">utopick.es</span></a></h5>
+<p>
+	<img alt="Interior de Utopick" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/utopick-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	El coraz&oacute;n de <a href="https://utopick.es/" target="_blank">Utopick</a>, su parte esencial y m&aacute;s personal, se centra en una gama de chocolates de origen bean to bar. Productos exquisitos que incluso han merecido condecoraciones a nivel europeo y que se inscriben en la ambici&oacute;n de ofrecer un producto &uacute;nico desde las manos de un peque&ntilde;o artesano. Un sue&ntilde;o, dir&iacute;an algunos, una utop&iacute;a quiz&aacute; m&aacute;s bien, pero que en este personal establecimiento del barrio de Ruzafa de Valencia lleva cerca de 5 a&ntilde;os haci&eacute;ndose realidad y evolucionando tanto en variedad como en el perfeccionamiento de cada propuesta. El negocio del chocolatero Paco Llopis y la dise&ntilde;adora Juana Rojas se ha popularizado tambi&eacute;n gracias a su gama de tabletas saborizadas y de sus &ldquo;Sweet Words&rdquo;, mensajes grabados en chocolate ideales para eventos y regalos. En esa b&uacute;squeda por despertar y estimular la magia alrededor del chocolate, uno de sus productos m&aacute;s exitosos han sido las bombetas, un material muy identificado con las fallas valencianas y que en su caso se han reconvertido en trufas rellenas de candy con licor. Tambi&eacute;n nos han sorprendido &uacute;ltimamente con una tableta de chocolate con pan, la evoluci&oacute;n natural de la t&iacute;pica y popular merienda.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	Fieles a la modernidad</h4>
+<h5>
+	Doriel Confiter&iacute;a, Culleredo /&nbsp;<a href="https://www.doriel.es/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">doriel.es</span></a></h5>
+<p>
+	<img alt="Productos de la Confitería Doriel" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/doriel-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Ariel Mendiz&aacute;bal es uno de aquellos embajadores de la pasteler&iacute;a de autor moderna, personal, abierta a la sensibilidad culinaria de vanguardia y comprometida con la nobleza de los ingredientes. El chocolate est&aacute; presente pr&aacute;cticamente en todas sus propuestas aunque obviamente, y como Spanish Chocolate Master, es en los bombones donde m&aacute;s y mejor expresi&oacute;n adquiere. Amante de moldeados originales y de apuestas coloristas y brillante su surtido de bombones alcanza hasta 42 rellenos diferentes. En la <a href="https://www.doriel.es/" target="_blank">Confiter&iacute;a Doriel</a> no son amigos de anticipar al cliente el sabor de cada bomb&oacute;n, el prop&oacute;sito es mantener hasta el final la sorpresa y la expectaci&oacute;n que se merece un producto tan personal como este. Y junto a los bombones, imperdonable no disfrutar del resto de la oferta, ya sean sus panettones, el surtido de pasteler&iacute;a habitual, las monas de Pascua o sus estimulantes propuestas para eventos, totalmente personalizadas en cada caso.</p>
+<p>
+	&nbsp;</p>
+<h4>
+	El chocolate escrito con x</h4>
+<h5>
+	Xocolart, Burgos /&nbsp;<a href="http://www.xocolart.com/" target="_blank"><span style="font-size: 80%; font-family: georgia,serif; color: rgb(96, 96, 96); text-decoration-line: none;">www.xocolart.com</span></a></h5>
+<p>
+	<img alt="Bombones de Xocolart" class="big" src="https://portales.vilbo.com/files/uploads/images/articulos/2019/chocolater%C3%ADas/xocolart-bg.jpg" style="width: 1200px; height: 600px;" /></p>
+<p>
+	Despu&eacute;s de su etapa de formaci&oacute;n en tierras catalanas al lado de figuras entre las que sobresale <a href="https://www.pasteleria.com/chefs/27-jordi-calvet">Jordi Calvet</a>, <strong>Enrique V&aacute;zquez</strong> abre <a href="http://www.xocolart.com/" target="_blank">Xocolart</a>, un establecimiento en Burgos que rinde culto al buen chocolate y que bebe de esas influencias catalanas desde su propio nombre. Este ingrediente es el protagonista de m&aacute;s de 200 referencias disponibles en el local, que se reparten en 24 bombones, media docena de tabletas saborizadas (frutos secos, peta zetas, cereza y yogur...), rocas, m&uacute;sicos, trufas y piruletas de chocolate. La Navidad es el momento estrella de esta pasteler&iacute;a, aunque tambi&eacute;n es significativo todo el esmero que ponen en la campa&ntilde;a de monas de pascua y en los chocolates serigrafiados con impresora para cumplea&ntilde;os y celebraciones. Como buen profesional, Enrique V&aacute;zquez tambi&eacute;n elabora un completo surtido de pasteles, reposter&iacute;a, tartas y boller&iacute;a.</p>
+
+		</div>
+
+		<br>
+		
+			</div>
+</article>    <div class="container">
+    <div class="page-separator"></div>
+</div>
+    <div class="container share">
+    <div class="row">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <p>Compártenos</p>
+
+            <div class="social-networks">
+								                <a target="_blank"  href="https://instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a target="_blank" href="http://twitter.com/intent/tweet?text=10 establecimientos con el chocolate como estrella de su oferta https://www.pasteleria.com/articulo/201909/3413-10-establecimientos-chocolate-estrella" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https://www.pasteleria.com/articulo/201909/3413-10-establecimientos-chocolate-estrella" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a target="_blank"  href="https://api.whatsapp.com/send?text=https://www.pasteleria.com/articulo/201909/3413-10-establecimientos-chocolate-estrella" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a target="_blank"  href="mailto:someone@domain.com?subject=Mira este artículo de DPAS&body=10 establecimientos con el chocolate como estrella de su oferta  https://www.pasteleria.com/articulo/201909/3413-10-establecimientos-chocolate-estrellae" target="_blank">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="post-tags col-12 col-md-6 order-1 order-md-2">
+                            <a href="/posts/tag/ricardo-velez" class="tag">
+                    Ricardo Vélez
+                </a>
+                            <a href="/posts/tag/oriol-balaguer" class="tag">
+                    Oriol Balaguer
+                </a>
+                            <a href="/posts/tag/chocolate" class="tag">
+                    Chocolate
+                </a>
+                            <a href="/posts/tag/albert-roca" class="tag">
+                    Albert Roca
+                </a>
+                            <a href="/posts/tag/paco-llopis" class="tag">
+                    Paco Llopis
+                </a>
+                            <a href="/posts/tag/dulcypas-book" class="tag">
+                    Dulcypas Book
+                </a>
+                    </div>
+    </div>
+</div>        
+
+
+
+
+    <div class="horizontal-banner">
+        <script type='text/javascript'><!--//<![CDATA[
+        var m3_u = (location.protocol=='https:'?'https://adv.vilbo.com/www/delivery/ajs.php':'http://adv.vilbo.com/www/delivery/ajs.php');
+        var m3_r = Math.floor(Math.random()*99999999999);
+        if (!document.MAX_used) document.MAX_used = ',';
+        document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+        document.write ("?zoneid=68");
+        document.write ('&amp;cb=' + m3_r);
+        if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+        document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+        document.write ("&amp;loc=" + escape(window.location));
+        if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+        if (document.context) document.write ("&context=" + escape(document.context));
+        if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+        document.write ("'><\/scr"+"ipt>");
+        //]]>--></script><noscript><a href=http://adv.vilbo.com/www/delivery/ck.php?n=a2e74668&amp;amp;cb=189203007186 target='_blank'>
+        <img src=http://adv.vilbo.com/www/delivery/avw.php?zoneid=68&amp;amp;cb=108106208751n=a2e74668 border='0' alt='' /></a></noscript>
+    </div>
+    <br>
+
+    <div class="container recommended">
+    <p class="title">DPAS Recomienda</p>
+    <div class="row">
+                    <div class="col-6 col-md-4 recommended-tem">
+                <article class="row">
+    <div class="col-12">
+		<a class="stretched-link mt-2" href="/receta/202207/4519-cheesecake-queso-oveja-anejo-esther-real">
+			<picture class="mix">
+    <source media="(min-width:768px)" srcset="https://portales.vilbo.com/files/ups/news/07-2022/cheesecake-forngil-port_cropped_380x200.jpg">
+    <img src="https://portales.vilbo.com/files/ups/news/07-2022/cheesecake-forngil-port_cropped_380x200.jpg"/>
+</picture>		</a>
+    </div>
+    <div class="content mt-lg-3 col-12">
+        <div class="">
+            <a class="stretched-link mt-2" href="/receta/202207/4519-cheesecake-queso-oveja-anejo-esther-real">
+                <h3>Cheesecake con queso de oveja añejo de Esther Real</h3>
+            </a>
+        </div>
+    </div>
+</article>            </div>
+                    <div class="col-6 col-md-4 recommended-tem">
+                <article class="row">
+    <div class="col-12">
+		<a class="stretched-link mt-2" href="/entrevista/202207/4517-quiero-encontrar-vuelta-distinta-combinacion-sabores-matias-veleda">
+			<picture class="mix">
+    <source media="(min-width:768px)" srcset="https://portales.vilbo.com/files/ups/news/07-2022/matiasveleda-entrev-port_cropped_380x200.jpg">
+    <img src="https://portales.vilbo.com/files/ups/news/07-2022/matiasveleda-entrev-port_cropped_380x200.jpg"/>
+</picture>		</a>
+    </div>
+    <div class="content mt-lg-3 col-12">
+        <div class="">
+            <a class="stretched-link mt-2" href="/entrevista/202207/4517-quiero-encontrar-vuelta-distinta-combinacion-sabores-matias-veleda">
+                <h3>“Quiero encontrar una vuelta distinta en la combinación de sabores&quot;</h3>
+            </a>
+        </div>
+    </div>
+</article>            </div>
+                    <div class="col-6 col-md-4 recommended-tem">
+                <article class="row">
+    <div class="col-12">
+		<a class="stretched-link mt-2" href="/articulo/202207/4516-tips-para-elegir-trabajar-chocolate-the-pastry-alphabet">
+			<picture class="mix">
+    <source media="(min-width:768px)" srcset="https://portales.vilbo.com/files/ups/news/07-2022/tips-chocolate-port_cropped_380x200.jpg">
+    <img src="https://portales.vilbo.com/files/ups/news/07-2022/tips-chocolate-port_cropped_380x200.jpg"/>
+</picture>		</a>
+    </div>
+    <div class="content mt-lg-3 col-12">
+        <div class="">
+            <a class="stretched-link mt-2" href="/articulo/202207/4516-tips-para-elegir-trabajar-chocolate-the-pastry-alphabet">
+                <h3>Tips para elegir y trabajar el chocolate según The Pastry Alphabet</h3>
+            </a>
+        </div>
+    </div>
+</article>            </div>
+            </div>
+</div>            </div>
+            <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-lg-12">
+                <div class="social-networks row justify-content-center">
+                    <div class="col-auto px-2 px-lg-3">
+						<a href="http://instagram.com/revistadulcypas" target="_blank">
+							<i class="bi bi-instagram"></i>
+						</a>
+					</div>
+										<div class="col-auto px-2 px-lg-3">
+						<a href="http://www.facebook.com/dulcypas" target="_blank">
+							<i class="bi bi-facebook"></i>
+						</a>
+					</div>
+					<div class="col-auto px-2 px-lg-3">
+						<a href="http://www.youtube.com/grupovilbo" target="_blank">
+							<i class="bi bi-youtube"></i>
+						</a>
+					</div>
+                </div>
+            </div>
+            <div class="col-6 offset-2 offset-lg-0 col-lg-12 text-right">
+                <div class="links">
+                    <ul>
+                        <li><a href="/sections/about">Sobre nosotros</a></li>
+                        <li><a target="_blank" href="https://www.booksforchefs.com/">Tienda online Books for Chefs</a></li>
+                        <li><a href="/ferias-profesionales">Calendario de ferias</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="/sections/legal">Información legal</a></li>
+                        <li><a href="/sections/cookies">Política de cookies</a></li>
+                        <li><a href="/sections/privacidad">Privacidad</a></li>
+                        <li><a href="/sections/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-12">
+                <div class="copyright">
+                    <p>© 2020 Vilbo Ediciones y Publicidad, S.L. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-12 text-right">
+                <div class="pasteleria">
+                    PASTELERIA.COM
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>        
+                <!-- START Cookie Manager -->
+        
+        <!-- Alert -->
+        <div class="modal fade" id="cookieAlertModal" class="cookiealert" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1> Política de cookies </h1>
+                    </div>
+        ​
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="cookies-alert-text col-md-12">
+								<small>
+									Las cookies en esta web son gestionadas por Vilbo Ediciones y Publicidad, S.L. para mejorar tu experiencia de navegación, ofrecerte una mejor personalización y mostrarte anuncios relevantes. Para administrar o deshabilitar estas cookies, haz click en “Configuración de cookies” o, para obtener más información, visita nuestra Política de Cookies.
+								</small>
+                            </div>
+                            <div class="cookies-alert-options col-md-12 text-center d-flex flex-column justify-content-center">
+                                <div class="row">
+                                    <div class="option-block col-12 col-md-6 text-right">
+                                        <button type="button" class="cookiesConfig-btn btn btn-secondary" data-toggle="modal"
+                                                data-target="#cookieModal">
+                                            Configuración de cookies
+                                        </button>
+                                    </div>
+                                    <div class="option-block col-12 col-md-6 text-left">
+                                        <button type="button" class="cookieAcceptAll btn btn-secondary">
+                                            Aceptar cookies
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        ​
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="row">
+                                                        <div class="col-12 title-block">
+                                <p class="modal-title" id="cookieModalLabel">
+                                    <h1><strong>Configuración de cookies</strong></h1>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row no-gutters">
+                            <div class="cookies-menu col-12 col-md-4">
+                                    <button class="btn-block" data-toggle="collapse" data-target="#collapseCookiePrivacity" aria-expanded="true">Política de cookies</button>
+                                    <button class="btn-block" data-toggle="collapse" data-target="#collapseCookieEssentials" aria-expanded="false">Cookies estrictamente necesarias</button>
+                                    <button class="btn-block" data-toggle="collapse" data-target="#collapseCookieStatistics" aria-expanded="false">Cookies de estadística</button>
+                            </div>
+                            <div class="cookies-content col-12 col-md-8">
+                                <!-- Essentials form group -->
+                                <div id="collapseCookiePrivacity" class="form-group collapse show" data-parent=".cookies-content">
+                                    <label class="mb-2" for="cookiePrivacity">Tu privacidad</label>
+                                    <small class="form-text">
+                                        Al visitar un sitio web, éste puede almacenar o recuperar información del navegador del usuario en forma de cookies. Tal información puede ser relativa al usuario, sus preferencias o su navegador, y es utilizada para que el sitio web funcione según lo esperado.
+                                        La información almacenada o recuperada no suele identificar directamente al usuario, pero le ofrece una experiencia de navegación más personalizada. Respetamos tu privacidad, por lo que puedes decidir deshabilitar algunos tipos de cookies.
+                                        Clica en el encabezado de las diferentes categorías de cookies para saber más y para cambiar la configuración ofrecida por defecto. No obstante, ten en cuenta que deshabilitar algunos tipos de cookies puede afectar al funcionamiento del sitio web y a los servicios que te ofrecemos.
+                                    </small>
+                                </div>
+        ​
+                                <div id="collapseCookieEssentials" class="form-group collapse" data-parent=".cookies-content">
+                                    <label for="cookieEssentials">Cookies de funcionalidad</label>
+                                    <input type="checkbox" id="cookieEssentials" data-cookie-name="cookie_essentials" checked data-toggle="toggle" data-size="xs" data-on=" " data-off=" " disabled>
+                                    <small class="form-text">
+                                        Son aquellas que permiten que el sitio web ofrezca una mejor funcionalidad y personalización. Pueden ser establecidas por el editor o por terceras partes cuyos servicios se han agregado al sitio web. Si el usuario no permite estas cookies algunos servicios no funcionarán correctamente.
+                                        <br/><br/>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <th>default_user_location</th>
+                                                    <td>Se usa para mantener el país y idioma de navegación del usuario en los siguientes accesos a la web. Caduca a los 30 días.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>most_visited_product</th>
+                                                    <td>Guarda una estadística de los productos visitados por el usuario para mostrarle los que más pueden interesarle. Caduca a los 10 años.</th>
+                                                </tr>
+                                            </body>
+                                        </table>
+                                    </small>
+                                </div>
+                
+                                <!-- Statistics form group -->
+                                <div id="collapseCookieStatistics" class="form-group collapse" data-parent=".cookies-content">
+                                    <label for="cookieStatistics">Cookies de estadística</label>
+                                    <input type="checkbox" id="cookieStatistics" data-cookie-name="cookie_statistics" checked data-toggle="toggle" data-size="xs" data-on=" " data-off=" ">
+                                    <small class="form-text">
+                                        Son aquellas que, bien tratadas por nosotros o por terceros, permiten cuantificar el número de visitantes y analizar estadísticamente la utilización que hacen los usuarios de nuestros servicios.
+                                        </br></br>
+                                        Las bibliotecas gtag.js y analytics.js configuran las cookies siguientes:
+                                        </br></br>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <th>_ga</th>
+                                                    <td>Se usa para distinguir a los usuarios. Caduca a los 2 años.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>_gid</th>
+                                                    <td>Se usa para distinguir a los usuarios. Caduca a las 24 horas.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>_gcl_au</th>
+                                                    <td>Se usa para hacer el tracking de las conversiones. Caduca a los 3 meses.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>_dc_gtm_UA-4554452-1</th>
+                                                    <td>Se usa para limitar el porcentaje de solicitudes. Caduca al minuto.</th>
+                                                </tr>
+                                            </body>
+                                        </table>
+                                    </small>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="modal-footer d-none d-md-block">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <button type="button" class="cookieSave btn btn-primary" data-dismiss="modal">
+                                    Confirmar mis preferencias
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <button type="button" class="cookieAcceptAll btn btn-primary" data-dismiss="modal">
+                                    Permitir todas
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-md-none">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button type="button" class="cookieSave btn btn-primary" data-dismiss="modal">
+                            Confirmar mis preferencias
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button type="button" class="cookieAcceptAll btn btn-primary" data-dismiss="modal">
+                            Permitir todas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Cookie Manager -->
+
+        <script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous">
+        </script>
+        <script
+        src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous">
+        </script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="/js/jquery.masonryGrid.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+        <script src="/js/jquery.fancybox.pack.js"></script>
+        <script src="/js/jquery.fancybox-thumbs.js"></script>
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    </body>
+</html>

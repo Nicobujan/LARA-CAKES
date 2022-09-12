@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Arvo:ital@1&family=Changa:wght@300&family=Mouse+Memoirs&family=Pacifico&family=Shrikhand&family=Silkscreen&display=swap");
+header {
+  background-color: #9E9D99;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header #logo {
+  font-family: "Shrikhand", cursive;
+  color: #D4908E;
+  -webkit-animation: slide-in-left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+          animation: slide-in-left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+header .pestañas a {
+  color: #D4908E;
+  -webkit-animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hero {
+  background-image: url(../fotos/fondobody.svg);
+  background-color: white;
+  height: 90vh;
+}
+.hero #bienvenidos {
+  background-color: #9E9D99;
+  color: #D4908E;
+  font-family: "Arvo", serif;
+  -webkit-animation: color-change-2x 10s linear infinite alternate both;
+          animation: color-change-2x 10s linear infinite alternate both;
+}
+
+.miranos {
+  background-color: #9E9D99;
+}
+.miranos #miralo {
+  color: #D4908E;
+  font-family: "Arvo", serif;
+}
+
+#body-index {
+  background-image: radial-gradient(circle, #9E9D99, #D4908E, #EBB4B1, pink);
+}
+
+.card-body {
+  background-color: #c1c0bf;
+}
+
+#muestra1, #muestra6, #muestra5, #muestra4, #muestra3, #muestra2 {
+  height: 250px;
+}
+
+#body-contacto {
+  background-image: url(../fotos/fondo\ body.webp);
+}
+
+#main-contacto h1 {
+  font-family: "Shrikhand", cursive;
+  color: black;
+}
+#main-contacto #texto-contacto p {
+  background-color: #D4908E;
+}
+
+.nombre label {
+  font-family: "Arvo", serif;
+  background-color: #9E9D99;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.mail label {
+  font-family: "Arvo", serif;
+  background-color: #9E9D99;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+legend {
+  font-family: "Arvo", serif;
+  background-color: #9E9D99;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+#body-quienes {
+  background-image: url(../fotos/fondosignos.webp);
+}
+#body-quienes section .titulos {
+  font-family: "Arvo", serif;
+  color: #ef8383;
+  display: inline-block;
+  background-color: #9E9D99;
+  border-radius: 15px;
+  padding: 2px;
+}
+#body-quienes section #parrafo-quienes {
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #e2baba;
+}
+
+#body-como-comprar {
+  background-color: #b7d4e5;
+}
+#body-como-comprar div #titulo-como-comprar {
+  font-family: "Changa", sans-serif;
+}
+
+.fa-paso1 {
+  background-color: rgba(113, 113, 202, 0.637);
+}
+
+.fa-paso2 {
+  background-color: rgb(206, 206, 145);
+}
+
+.fa-paso3 {
+  background-color: rgb(141, 211, 158);
+}
+
+.fa-paso4 {
+  background-color: rgb(132, 208, 230);
+}
+
+.fa-paso5 {
+  background-color: rgb(216, 175, 202);
+}
+
+.fa-paso6 {
+  background-color: rgb(255, 60, 0);
+}
+
+.fa-paso7 {
+  background-color: rgb(136, 131, 179);
+}
+
+.fa-paso8 {
+  background-color: rgb(219, 219, 207);
+}
+
+.fa-paso9 {
+  background-color: rgb(151, 134, 150);
+}
+
+#body-productos {
+  background-image: radial-gradient(bisque, wheat, pink);
+}
+
+h3 {
+  background-color: #D4908E;
+  font-family: "Arvo", serif;
+}
+
+#footer-como-comprar {
+  margin-top: 123px;
+}
+
+footer {
+  background-color: #9E9D99;
+  padding: 20px;
+  margin-top: 113px;
+}
+footer #seguinos {
+  font-family: "Shrikhand", cursive;
+  margin-top: 8px;
+  color: #D4908E;
+}
+footer .fa-twitter {
+  color: #D4908E;
+}
+footer .fa-facebook {
+  color: #D4908E;
+}
+footer .fa-instagram {
+  color: #D4908E;
+}
+footer .fa-whatsapp {
+  color: #D4908E;
+}/*# sourceMappingURL=estilos.css.map */
