@@ -466,4 +466,9 @@ footer .fa-whatsapp:hover {
     filter: blur(0);
     opacity: 1;
   }
+}
+@media screen and (max-width: 770px) {
+  #carta {
+    padding-bottom: 20px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
