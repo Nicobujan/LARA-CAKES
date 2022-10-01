@@ -1,25 +1,40 @@
 // ---------------------------------------------------------footer--------------//
 #seguinos {
     color: #d5918e;
-    animation: efecto_instagram .7s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both
 }
 
-@keyframes efecto_instagram {
-    0% {
+
+
+@keyframes heartbeat {
+    from {
         transform: scale(1);
-        color: #D5918E;
+        transform-origin: center center;
+        animation-timing-function: ease-out
     }
 
-    50% {
-        transform: scale(1.3);
-        color: #D5918E;
+    10% {
+        transform: scale(.91);
+        animation-timing-function: ease-in
     }
 
-    100% {
+    17% {
+        transform: scale(.98);
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        transform: scale(.87);
+        animation-timing-function: ease-in
+    }
+
+    45% {
         transform: scale(1);
-        color: #D5918E;
+        animation-timing-function: ease-out
     }
 }
+
+
 
 #bienvenidos {
     animation: color-change-2x 5s linear infinite alternate both;
@@ -87,23 +102,47 @@
     }
 }
 
-.titulos{
-    animation:flip-in-hor-bottom .8s cubic-bezier(.25,.46,.45,.94) both
+
+
+#parrafo-zona{
+    animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both
+}
+@keyframes scale-in-hor-center{0%{transform:scaleX(0);opacity:1}100%{transform:scaleX(1);opacity:1}}
+
+
+.foto {
+    animation: flip-in-hor-bottom 1s cubic-bezier(.25, .46, .45, .94) both
 }
 
 
- @keyframes flip-in-hor-bottom{0%{transform:rotateX(80deg);opacity:0}100%{transform:rotateX(0);opacity:1}}
- 
- .foto{
-    animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both
- }
- 
+@keyframes flip-in-hor-bottom {
+    0% {
+        transform: rotateX(80deg);
+        opacity: 0
+    }
 
-@keyframes flip-in-hor-bottom{0%{transform:rotateX(80deg);opacity:0}100%{transform:rotateX(0);opacity:1}}
+    100% {
+        transform: rotateX(0);
+        opacity: 1
+    }
+}
 
-#titulo-como-comprar{
-    animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both
+#titulo-como-comprar {
+    animation: focus-in-contract-bck 1s cubic-bezier(.25, .46, .45, .94) both
 }
 
 
- @keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}}
+@keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(300px);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateZ(12px);
+        filter: blur(0);
+        opacity: 1
+    }
+}

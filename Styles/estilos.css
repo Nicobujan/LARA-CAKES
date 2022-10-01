@@ -26,7 +26,7 @@ header #logo:hover {
 .hero {
   background-image: url(../fotos/fondobody.svg);
   background-color: white;
-  height: 90vh;
+  height: 100vh;
 }
 .hero #bienvenidos {
   background-color: #F6E3DF;
@@ -50,7 +50,7 @@ header #logo:hover {
 }
 
 #body-index {
-  background-image: radial-gradient(circle, #9E9D99, #D4908E, #EBB4B1, pink);
+  background-image: radial-gradient(circle, #ffffff, #ffd0ce, #fdb5b1, pink);
 }
 
 .card-body {
@@ -163,46 +163,107 @@ legend {
 
 h3 {
   background-color: #D4908E;
+  color: white;
   font-family: "Arvo", serif;
 }
 
 main .bombon {
-  background-color: green;
+  background-color: #F7DEE8;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 main .galleta {
-  background-color: skyblue;
+  background-color: #F7DEE8;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 main .magda {
-  background-color: yellow;
+  background-color: #e4cdd6;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 main .paleta {
-  background-color: green;
+  background-color: #e4cdd6;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 main .tortas {
-  background-color: skyblue;
+  background-color: #ceb8c0;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 main .estruc {
-  background-color: yellow;
+  background-color: #ceb8c0;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 
+.error {
+  background-color: #D4908E;
+  font-family: "Changa", sans-serif;
+}
+
+.titulo-error {
+  font-size: 100px;
+}
+
+.subtitulo-error {
+  font-size: 30px;
+}
+
+.herramientas {
+  margin-top: 175px;
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+          animation: vibrate-1 0.3s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 #footer-como-comprar {
   margin-top: 123px;
 }
@@ -243,39 +304,71 @@ footer .fa-whatsapp:hover {
   color: #00A884;
 }
 
+#footer-quienes {
+  margin-top: 85px;
+}
+
 #seguinos {
   color: #d5918e;
-  -webkit-animation: efecto_instagram 0.7s ease-in-out infinite both;
-          animation: efecto_instagram 0.7s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+          animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-@-webkit-keyframes efecto_instagram {
-  0% {
+@-webkit-keyframes heartbeat {
+  from {
     transform: scale(1);
-    color: #D5918E;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
-  50% {
-    transform: scale(1.3);
-    color: #D5918E;
+  10% {
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
-  100% {
+  17% {
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
     transform: scale(1);
-    color: #D5918E;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 
-@keyframes efecto_instagram {
-  0% {
+@keyframes heartbeat {
+  from {
     transform: scale(1);
-    color: #D5918E;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
-  50% {
-    transform: scale(1.3);
-    color: #D5918E;
+  10% {
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
-  100% {
+  17% {
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
     transform: scale(1);
-    color: #D5918E;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 #bienvenidos {
@@ -394,9 +487,35 @@ footer .fa-whatsapp:hover {
             animation-timing-function: ease-out;
   }
 }
-.titulos {
-  -webkit-animation: flip-in-hor-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: flip-in-hor-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+#parrafo-zona {
+  -webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.foto {
+  -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes flip-in-hor-bottom {
@@ -408,21 +527,6 @@ footer .fa-whatsapp:hover {
     transform: rotateX(0);
     opacity: 1;
   }
-}
-
-@keyframes flip-in-hor-bottom {
-  0% {
-    transform: rotateX(80deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0);
-    opacity: 1;
-  }
-}
-.foto {
-  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes flip-in-hor-bottom {

@@ -4,6 +4,7 @@
 
 h3{
     background-color: $texthfcolor;
+    color: white;
     font-family: "Arvo", serif;
 }
 @mixin cards ($fondo){
@@ -15,22 +16,22 @@ h3{
 } 
 main{
 .bombon{
-    @include cards(green)
+    @include cards(#F7DEE8)
 }
 .galleta{
-    @include cards(skyblue)
+    @include cards(#F7DEE8)
 }
 .magda{
-    @include cards(yellow)
+    @include cards(#e4cdd6)
 }
 .paleta{
-    @include cards(green)
+    @include cards(#e4cdd6)
 }
 .tortas{
-    @include cards(skyblue)
+    @include cards(#ceb8c0)
 }
 .estruc{
-    @include cards(yellow)
+    @include cards(#ceb8c0)
 }
 
 
